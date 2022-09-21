@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9fec1c2b51.js" crossorigin="anonymous"></script>
+    <title>Jogo da Forca</title>
+  </head>
+
+  <body>
+
+      <header>
+          <img src="./imagens/alura_logo.png" alt="Logo da Alura"/>
+      </header>
+
+      <main>
+        <p id="demo"></p>
+          <div class="area-input">
+            <input type="textarea" onkeydown="mantemLetrasComuns(event)" maxlength="8" id="input-palavra" placeholder="Digite uma palavra"/>
+          </div>
+          <p><i class="fa-solid fa-circle-exclamation" alt="ícone de exclamação"></i>&nbsp;Máx. de 8 letras.</p>
+          <div class="botoes-palavra">
+          
+                <div class="salvar-palavra">
+                    <input type="button" onclick="salvarPalavra()" value="Salvar e começar"/>
+                </div>
+                <div class="cancelar">
+                    <input type="button" onclick="location.href='index.html'" value="Cancelar"/>
+                </div>
+          </div>
+
+      </main>
+
+  </body>
